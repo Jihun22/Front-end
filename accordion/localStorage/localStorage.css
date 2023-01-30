@@ -11,5 +11,5 @@ button:hover {
     background-color: black;
     color:#fff;
     transition:all .35s;
-    cursor:help /*wait,crosshair, not-allowed, zoom-in, grab */;
+    cursor:pointer; /*help,wait,crosshair, not-allowed, zoom-in, grab */;
 }
