@@ -2,6 +2,7 @@
 //[!] 주요 메서드 2개 
 // 값 저장하기 --> localStorage.setltem('key',value);
 //값 가져오기 --> localStorage.getltem('key');
+//값 삭제하기 -->localStorage.removeltem('key);
 //키(key)를 그대로 놓고 새로운 값을 저장하면 덮어쓰기가 되면서 기존 로컬 데이터 정보가 수정 
 
 window.onload = () => {
@@ -43,6 +44,16 @@ btnGLD.addEventListener('click', () => {
     else 
    input.value= getData; //input 텍스트 박스에 삽입.
 
+});
+
+//Remove 버튼 클릭시 
+const btnRLD= document.querySelector('.btnRemoveLocalData');
+
+btnRLD.addEventListener('click' , () => {
+
+    //할일 처리 --> 해당키의 로컬 데이터 삭제
+    localStorage.removeItem('userid'); 
+    alert('삭제완료!');
 });
 
 }
